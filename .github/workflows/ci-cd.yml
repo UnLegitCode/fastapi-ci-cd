@@ -2,10 +2,10 @@ name: CI для FastAPI в Docker
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
