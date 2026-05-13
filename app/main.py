@@ -42,7 +42,7 @@ def create_task(task: Task, background_tasks: BackgroundTasks):
 
     redis_client.delete(CACHE_KEY)
 
-    background_tasks.add_task(send_notification, task.id, task.title)
+    background_tasks.add_taskaaa(send_notification, task.id, task.title)
 
     return {
         "message": "Task created",
